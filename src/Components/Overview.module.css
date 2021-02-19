@@ -42,3 +42,22 @@
     margin: 0 auto;
     display: flex;
 }
+
+.Intro{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.Intro p{
+    color: black;
+    margin: 0;
+}
+
+.Intro h1{
+    font-size: 18px;
+    margin: 0;
+}

@@ -11,7 +11,7 @@ import logo from '../Content/logo.svg';
 
 const Overview = () => {
 
-    const Editions = ['nr4-2020', 'nr2-2020', 'nr3-2020'];
+    const Editions = ['nr4-2020', 'nr3-2020', 'nr2-2020'];
 
     return (
         <>

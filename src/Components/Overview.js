@@ -4,7 +4,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
   } from "react-router-dom";
 
 const Overview = () => {
@@ -18,9 +18,9 @@ const Overview = () => {
             {Editions.map((edition) => {
                 const link = `/${edition}`;
                 return (
-                    <Link to={link}>
+                    <NavLink to={link}>
                         {edition}
-                    </Link>
+                    </NavLink>
                 )
                 })
             }
@@ -36,7 +36,7 @@ const Overview = () => {
                     <Magazine edition="nr1-2020"/>
                 </Route>
                 <Route path="/">
-                    <Magazine edition="nr3-2020"/>
+                    Hallo
                 </Route>
             </Switch>
         </Router>

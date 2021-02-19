@@ -1,10 +1,10 @@
-
 import './App.css';
+import Magazine from './Components/Magazine';
 
 function App() {
   return (
     <div className="App">
-      Stiho overzicht
+      <Magazine />
     </div>
   );
 }

@@ -6,6 +6,8 @@ import {
     Route,
     NavLink
   } from "react-router-dom";
+import style from './Overview.module.scss';
+import logo from '../Content/logo.svg';
 
 const Overview = () => {
 
@@ -13,33 +15,43 @@ const Overview = () => {
 
     return (
         <>
-        <Router>
-            {console.log(Editions)}
-            {Editions.map((edition) => {
-                const link = `/${edition}`;
-                return (
-                    <NavLink to={link}>
-                        {edition}
-                    </NavLink>
-                )
-                })
-            }
-
-            <Switch>
-                <Route path="/nr2-2020">
-                    <Magazine edition="nr2-2020" />
-                </Route>
-                <Route path="/nr3-2020">
-                    <Magazine edition="nr3-2020"/>
-                </Route>
-                <Route path="/nr1-2020">
-                    <Magazine edition="nr1-2020"/>
-                </Route>
-                <Route path="/">
-                    Hallo
-                </Route>
-            </Switch>
-        </Router>
+            <Router>
+                <div className={style.Header}>
+                    <div className={style.HeaderContainer}>
+                        <Switch>
+                            <NavLink to="/">
+                                <img src={logo} alt="Logo" />
+                            </NavLink>
+                        </Switch>
+                    </div>
+                </div>
+                <Switch>
+                    {Editions.map((edition) => {
+                        const editionLink = `/${edition}`;
+                        return (
+                            <Route path={editionLink}>
+                                <Magazine edition={edition} />
+                            </Route>
+                        )
+                    })}
+                    <Route path="/">
+                    <div className={style.Container}>
+                        {console.log(Editions)}
+                        {Editions.map((edition) => {
+                            const link = `/${edition}`;
+                            return (
+                                <>
+                                    <NavLink className={style.Item} key={link} to={link}>
+                                        {edition}
+                                    </NavLink>
+                                </>
+                            )
+                            })
+                        }
+                    </div>
+                    </Route>
+                </Switch>
+            </Router>
         </>
     )
 };

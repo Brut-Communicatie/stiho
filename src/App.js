@@ -1,10 +1,10 @@
 import './App.css';
-import Magazine from './Components/Magazine';
+import Overview from './Components/Overview';
 
 function App() {
   return (
     <div className="App">
-      <Magazine />
+      <Overview />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import {
     Route,
     NavLink
   } from "react-router-dom";
-import style from './Overview.module.scss';
+import style from './Overview.module.css';
 import logo from '../Content/logo.svg';
 
 const Overview = () => {

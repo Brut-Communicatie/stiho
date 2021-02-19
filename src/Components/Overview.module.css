@@ -21,9 +21,11 @@
         0 4px 4px rgba(0, 0, 0, 0.12),
         0 8px 8px rgba(0, 0, 0, 0.12),
         0 16px 16px rgba(0, 0, 0, 0.12);
-    &:hover{
-        background-color: rgb(209, 209, 209);
-    }
+  
+}
+
+.Item:hover{
+    background-color: rgb(209, 209, 209);
 }
 
 .Header {
@@ -33,10 +35,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
 
-    &Container{
-        width: 1080px;
-        margin: 0 auto;
-        display: flex;
-    }
+.HeaderContainer{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
 }

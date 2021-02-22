@@ -74,7 +74,7 @@ const Overview = () => {
                         console.log(edition);
                         const link = `/${edition.url}`;
                         return (
-                            <Route path={link}>
+                            <Route exact path={link}>
                                 <Magazine edition={edition.url} />
                             </Route>
                         )

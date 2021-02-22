@@ -40,7 +40,7 @@
     transform: scale(1.025);
 }
 
-.Item:hover :not(){
+.Item:hover {
     opacity: 0.4;
 }
 

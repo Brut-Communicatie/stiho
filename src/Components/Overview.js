@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
 import style from './Overview.module.css';
 import logo from '../Content/logo.svg';
+import introImage from '../Content/background.jpg';
 import { Helmet } from 'react-helmet';
 
 const Overview = () => {
@@ -82,7 +83,7 @@ const Overview = () => {
     return (
         <>
         <Helmet>
-            <title>Stiho magazine</title>
+            <title>Stiho | Online magazine</title>
         </Helmet>
             <Router>
                 <Switch>
@@ -106,18 +107,25 @@ const Overview = () => {
                                 <a href="https://www.stiho.nl">naar stiho.nl</a>
                             </div>
                         </div>
-                        <div className={style.Intro}>
+                        <div className={style.Intro} style={ {backgroundImage: `url(${introImage})`}}>
+                            <div className={style.Wrapper}>
                             <h1>Online Stiho magazine</h1>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
                         </div>
                         <div className={style.Container}>
-                            {Editions.map((edition) => {
+                            {Editions.map((edition, index) => {
                                 const link = `/${edition.url}`;
                                 return (
                                     <>
                                         <NavLink target="_blank" key={edition.url} className={style.Item}  to={link}>
                                             <img src={edition.thumbnail} />
                                             <div className={style.Details}>
+                                                {index == 0 ? (
+                                                    <>
+                                                        <div className={style.Nieuw}>Nieuw</div>
+                                                    </>
+                                                ) : null}
                                                 <h3>{edition.name}</h3>
                                                 <h4>{edition.date}</h4>
                                                 <p>{edition.content}</p>

@@ -9,6 +9,12 @@ import {
 import style from './Overview.module.css';
 import logo from '../Content/logo.svg';
 import introImage from '../Content/background.jpg';
+
+import YouTube from '../Content/youtube-brands.svg';
+import Instagram from '../Content/instagram-brands.svg';
+import LinkedIn from '../Content/linkedin-brands.svg';
+import Facebook from '../Content/facebook-square-brands.svg';
+
 import { Helmet } from 'react-helmet';
 
 const Overview = () => {
@@ -130,6 +136,9 @@ const Overview = () => {
                                                 <h4>{edition.date}</h4>
                                                 <p>{edition.content}</p>
                                             </div>
+                                            <div className={style.Read}>
+                                                <p>Lees {edition.name}</p>
+                                            </div>
                                         </NavLink>
                                     </>
                                 )
@@ -137,7 +146,18 @@ const Overview = () => {
                             }
                         </div>
                         <div className={style.Footer}>
-
+                            <div className={style.FooterContainer}>
+                                <div className={style.FooterRechts}>
+                                    <h4>Over Stiho</h4>
+                                    <p>Stiho is al sinds 1926 dé groothandel in bouwmaterialen, hout en plaat en levert aan bouwend Nederland. Met 17 vestigingen door heel Nederland is Stiho altijd dichtbij. Binnenkort is dat helemaal het geval, want dan komen er nog 6 vestigingen bij. Op het Stiho-bouwplein vind je Stiho en Giebels – groothandel in ijzerwaren en gereedschappen – samen onder één dak. Zo vind je alles wat je nodig hebt op één plek. Handig!</p>
+                                </div>
+                                <div className={style.FooterLinks}>
+                                    <a href="https://www.instagram.com/stiho_bv/" target="_blank" rel="noopener noreferrer"><img src={Instagram} alt="Instagram" width="25px"/></a>
+                                    <a href="https://www.linkedin.com/company/stiho/" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="LinkedIn" width="25px"/></a>
+                                    <a href="https://www.facebook.com/StihoBV/" target="_blank" rel="noopener noreferrer"><img src={Facebook} alt="Facebook" width="25px"/></a>
+                                    <a href="https://www.youtube.com/user/StihoBV" target="_blank" rel="noopener noreferrer"><img src={YouTube} alt="Youtube" width="25px"/></a>
+                                </div>
+                            </div>
                         </div>
                     </Route>
                 </Switch>

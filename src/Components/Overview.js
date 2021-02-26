@@ -22,67 +22,67 @@ const Overview = () => {
     const Editions = [
         {
             url: 'nr4-2020',
-            name: 'Magazine 4',
-            date: '2020 Maart',
+            name: 'Nummer 4',
+            date: 'december 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/154584/67MAPSrvkXIPLJHvN_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "Mondkapjes, niet te veel mensen tegelijk in de keet, extra goed plannen. In dit ‘nieuwe normaal’ doen de zpp’ers in de bouw hun werk. "
         }, 
         {   
             url: 'nr3-2020',
-            name: 'Magazine 3',
-            date: '2020 Februari',
+            name: 'Nummer 3',
+            date: 'oktober 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/147639/aa43gfdwo_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "De bouw traditioneel? Zeker niet, kijk maar naar dit nummer. Zo bouwt BVR Bouw 44 woningen met veel prefab-elementen. En Karbouw bestelde voor een groot project alle materialen online."
         }, 
         {   
             url: 'nr2-2020',
-            name: 'Magazine 2',
-            date: '2020 Januari',
+            name: 'Nummer 2',
+            date: 'juni 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/136596/8nrm5bdjt_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "Vanaf februari kregen we ook in Nederland te maken met het coronavirus. Om de maatregelen kon je ook op jouw Stiho-vestiging niet heen. De dagelijkse bak koffie kon even niet."
         }, 
         {   
             url: 'nr3-2020',
-            name: 'Magazine 3',
-            date: '2020 Februari',
+            name: 'Nummer 3',
+            date: 'oktober 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/147639/aa43gfdwo_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "De bouw traditioneel? Zeker niet, kijk maar naar dit nummer. Zo bouwt BVR Bouw 44 woningen met veel prefab-elementen. En Karbouw bestelde voor een groot project alle materialen online."
         }, 
         {   
             url: 'nr2-2020',
-            name: 'Magazine 2',
-            date: '2020 Januari',
+            name: 'Nummer 2',
+            date: 'juni 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/136596/8nrm5bdjt_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "Vanaf februari kregen we ook in Nederland te maken met het coronavirus. Om de maatregelen kon je ook op jouw Stiho-vestiging niet heen. De dagelijkse bak koffie kon even niet."
         },
         {
             url: 'nr4-2020',
-            name: 'Magazine 4',
-            date: '2020 Maart',
+            name: 'Nummer 4',
+            date: 'december 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/154584/67MAPSrvkXIPLJHvN_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "Mondkapjes, niet te veel mensen tegelijk in de keet, extra goed plannen. In dit ‘nieuwe normaal’ doen de zpp’ers in de bouw hun werk. "
         }, 
         {   
             url: 'nr3-2020',
-            name: 'Magazine 3',
-            date: '2020 Februari',
+            name: 'Nummer 3',
+            date: 'oktober 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/147639/aa43gfdwo_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "De bouw traditioneel? Zeker niet, kijk maar naar dit nummer. Zo bouwt BVR Bouw 44 woningen met veel prefab-elementen. En Karbouw bestelde voor een groot project alle materialen online."
         }, 
         {   
             url: 'nr2-2020',
-            name: 'Magazine 2',
-            date: '2020 Januari',
+            name: 'Nummer 2',
+            date: 'juni 2020',
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/136596/8nrm5bdjt_d.png",
-            content: "Deze uitgave gaat over een korte introductie over de uitgave."
+            content: "Vanaf februari kregen we ook in Nederland te maken met het coronavirus. Om de maatregelen kon je ook op jouw Stiho-vestiging niet heen. De dagelijkse bak koffie kon even niet."
         }
     ];
 
@@ -115,8 +115,11 @@ const Overview = () => {
                         </div>
                         <div className={style.Intro} style={ {backgroundImage: `url(${introImage})`}}>
                             <div className={style.Wrapper}>
-                            <h1>Online Stiho magazine</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <h1>Het Stiho magazine lees je nu (ook) online!</h1>
+                            <p>Al bijna 30 jaar houden we je op de hoogte van de nieuwste ontwikkelingen, mooie projecten en handige producten. Dat deden we sinds 1987 met de Stiho Krant, die we in 2016 grondig gerenoveerd hebben. De krant werd het eigentijdse <a href="https://www.stiho.nl/over-ons/Stiho-Magazine" target="_blank" rel="noopener noreferrer">Stiho Magazine</a>. Sinds begin 2020 publiceren we het Stiho magazine óók online. Je kunt 'm lezen op je mobiel, tablet of je pc. Je kunt er doorheen scrollen, op een product klikken om direct naar de webshop te gaan en artikelen delen met collega’s. Super handig! Het magazine komt vier keer per jaar uit.
+                                <br/><br/>
+                                Namens de redactie van het Stiho magazine: veel leesplezier! 
+                            </p>
                             </div>
                         </div>
                         <div className={style.Container}>
@@ -132,8 +135,7 @@ const Overview = () => {
                                                         <div className={style.Nieuw}>Nieuw</div>
                                                     </>
                                                 ) : null}
-                                                <h3>{edition.name}</h3>
-                                                <h4>{edition.date}</h4>
+                                                <h3>{edition.name} - {edition.date}</h3>
                                                 <p>{edition.content}</p>
                                             </div>
                                             <div className={style.Read}>

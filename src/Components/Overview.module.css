@@ -24,7 +24,7 @@
 
 .Item {
     display: flex;
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 4 - 10px);
     background-color: #fff;
     padding: 0 0 1rem;
     color: black;
@@ -40,7 +40,7 @@
     position: relative;
 }
 
-.Item:not(:nth-child(3n)) {
+.Item:not(:nth-child(4n)) {
     margin-right: 10px;
 }
 
@@ -133,7 +133,7 @@
     width: 1080px;
     margin: 2rem auto 0;
     text-align: left;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: #fff;
     color: #fff;
     border-radius: 5px;
@@ -273,15 +273,15 @@
 .Nieuw {
     display: flex;
     position: absolute;
-    top: -30px;
+    top: -100px;
     justify-content: center;
     align-items: center;
-    right: 10px;
+    left: 10px;
     background-color: var(--main-color);
     color: #fff;
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
+    width: 70px;
+    height: 70px;
+    font-size: 19px;
     padding: 10px;
     font-weight: 700;
     border-radius: 50%;

@@ -43,46 +43,6 @@ const Overview = () => {
             pages: '12',
             thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/136596/8nrm5bdjt_d.png",
             content: "Vanaf februari kregen we ook in Nederland te maken met het coronavirus. Om de maatregelen kon je ook op jouw Stiho-vestiging niet heen. De dagelijkse bak koffie kon even niet."
-        }, 
-        {   
-            url: 'nr3-2020',
-            name: 'Nummer 3',
-            date: 'oktober 2020',
-            pages: '12',
-            thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/147639/aa43gfdwo_d.png",
-            content: "De bouw traditioneel? Zeker niet, kijk maar naar dit nummer. Zo bouwt BVR Bouw 44 woningen met veel prefab-elementen. En Karbouw bestelde voor een groot project alle materialen online."
-        }, 
-        {   
-            url: 'nr2-2020',
-            name: 'Nummer 2',
-            date: 'juni 2020',
-            pages: '12',
-            thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/136596/8nrm5bdjt_d.png",
-            content: "Vanaf februari kregen we ook in Nederland te maken met het coronavirus. Om de maatregelen kon je ook op jouw Stiho-vestiging niet heen. De dagelijkse bak koffie kon even niet."
-        },
-        {
-            url: 'nr4-2020',
-            name: 'Nummer 4',
-            date: 'december 2020',
-            pages: '12',
-            thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/154584/67MAPSrvkXIPLJHvN_d.png",
-            content: "Mondkapjes, niet te veel mensen tegelijk in de keet, extra goed plannen. In dit ‘nieuwe normaal’ doen de zpp’ers in de bouw hun werk. "
-        }, 
-        {   
-            url: 'nr3-2020',
-            name: 'Nummer 3',
-            date: 'oktober 2020',
-            pages: '12',
-            thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/147639/aa43gfdwo_d.png",
-            content: "De bouw traditioneel? Zeker niet, kijk maar naar dit nummer. Zo bouwt BVR Bouw 44 woningen met veel prefab-elementen. En Karbouw bestelde voor een groot project alle materialen online."
-        }, 
-        {   
-            url: 'nr2-2020',
-            name: 'Nummer 2',
-            date: 'juni 2020',
-            pages: '12',
-            thumbnail: "https://s3.eu-west-2.amazonaws.com/screenshots-1d5fh4/136596/8nrm5bdjt_d.png",
-            content: "Vanaf februari kregen we ook in Nederland te maken met het coronavirus. Om de maatregelen kon je ook op jouw Stiho-vestiging niet heen. De dagelijkse bak koffie kon even niet."
         }
     ];
 
@@ -149,7 +109,7 @@ const Overview = () => {
                             <div className={style.FooterContainer}>
                                 <div className={style.FooterRechts}>
                                     <h4>Over Stiho</h4>
-                                    <p>Stiho is al sinds 1926 dé groothandel in bouwmaterialen, hout en plaat en levert aan bouwend Nederland. Met 17 vestigingen door heel Nederland is Stiho altijd dichtbij. Binnenkort is dat helemaal het geval, want dan komen er nog 6 vestigingen bij. Op het Stiho-bouwplein vind je Stiho en Giebels – groothandel in ijzerwaren en gereedschappen – samen onder één dak. Zo vind je alles wat je nodig hebt op één plek. Handig!</p>
+                                    <p>Stiho is al sinds 1926 dé groothandel in bouwmaterialen, hout en plaat en levert aan bouwend Nederland. Met 23 vestigingen door heel Nederland is Stiho altijd dichtbij. Binnenkort is dat helemaal het geval, want dan komen er nog 6 vestigingen bij. Op het Stiho-bouwplein vind je Stiho en Giebels – groothandel in ijzerwaren en gereedschappen – samen onder één dak. Zo vind je alles wat je nodig hebt op één plek. Handig!</p>
                                 </div>
                                 <div className={style.FooterLinks}>
                                     <a href="https://www.instagram.com/stiho_bv/" target="_blank" rel="noopener noreferrer"><img src={Instagram} alt="Instagram" width="25px"/></a>

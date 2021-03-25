@@ -4,7 +4,7 @@ import './Magazine.css';
 
 const Magazine = (props) => {
     const edition = props.edition;
-    const url = `https://magazine.stiho.nl/${edition}/cover/`;
+    const url = `https://brut-communicatie.foleon.com/stiho/${edition}/cover/`;
     return (
     <>
     <div className="frame">

@@ -113,7 +113,7 @@ const Overview = () => {
                                 <a href="https://www.stiho.nl">naar stiho.nl</a>
                             </div>
                         </div>
-                        <div className={style.Intro} style={ {backgroundImage: `url(${introImage})`}}>
+                        <div className={style.Intro}>
                             <div className={style.Wrapper}>
                             <h1>Het Stiho magazine lees je nu (ook) online!</h1>
                             <p>Al bijna 30 jaar houden we je op de hoogte van de nieuwste ontwikkelingen, mooie projecten en handige producten. Dat deden we sinds 1987 met de Stiho Krant, die we in 2016 grondig gerenoveerd hebben. De krant werd het eigentijdse <a href="https://www.stiho.nl/over-ons/Stiho-Magazine" target="_blank" rel="noopener noreferrer">Stiho Magazine</a>. Sinds begin 2020 publiceren we het Stiho magazine óók online. Je kunt 'm lezen op je mobiel, tablet of je pc. Je kunt er doorheen scrollen, op een product klikken om direct naar de webshop te gaan en artikelen delen met collega’s. Super handig! Het magazine komt vier keer per jaar uit.

@@ -134,7 +134,7 @@
     margin: 2rem auto 0;
     text-align: left;
     padding: 1rem 0;
-    background-color: #fff;
+    background-color: black;
     color: #fff;
     border-radius: 5px;
     background-size: cover;
@@ -156,7 +156,7 @@
     overflow: hidden;
 }
 
-.Wrapper::before {
+/* .Wrapper::before {
     content: '';
     position: absolute;
     background: linear-gradient(0deg, #00000090 50%, #aeaeaeb9 100%);
@@ -165,7 +165,7 @@
     z-index: -1;
     left: 0;
     top: 0;
-}
+} */
 
 .Read {
     position: absolute;

@@ -70,7 +70,8 @@ const Overview = () => {
                 <Switch>
                     {editions.map((edition) => {
                         // console.log(edition);
-                        const link = `/${edition.acf.url}`;
+                        let link = `/${edition.acf.url}`;
+        
                         return (
                             <Route key={link} exact path={link}>
                                 <Magazine edition={edition.acf.url} />
@@ -98,6 +99,25 @@ const Overview = () => {
                         <div className={style.Container}>
                             {editions.map((edition, index) => {
                                 const link = `/${edition.acf.url}`;
+                                if (edition.acf.issue) {
+                                    return (
+                                        <a href={edition.acf.issuu_link} target="_blank" className={style.Item}>
+                                            <img src={edition.acf.thumbnail} />
+                                            <div className={style.Details}>
+                                                {index == 0 ? (
+                                                    <>
+                                                        <div className={style.Nieuw}>Nieuw</div>
+                                                    </>
+                                                ) : null}
+                                                <h3>{edition.acf.name} - {edition.acf.date}</h3>
+                                                <p>{edition.acf.content}</p>
+                                            </div>
+                                            <div className={style.Read}>
+                                                <p>Lees {edition.acf.name}</p>
+                                            </div>
+                                        </a>
+                                    )
+                                }
                                 return (
                                     <>
                                         <NavLink target="_blank" key={edition.acf.url} className={style.Item}  to={link}>
